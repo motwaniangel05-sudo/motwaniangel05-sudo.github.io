@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#090819">
+  <title>Angel Motwani | Data Science Portfolio</title>
+  <meta name="description" content="Portfolio of Angel Motwani, B.Tech Data Science student at NMIMS Mumbai: machine learning, SQL analysis and AI projects.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✨</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <script>
+    document.documentElement.classList.add("js");
+    // Safety net: if script.js fails to load or run, show everything after 1.5 seconds
+    setTimeout(function () {
+      if (!document.documentElement.classList.contains("ready")) {
+        document.documentElement.classList.add("reveal-all");
+      }
+    }, 1500);
+  </script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="progress" id="progress" aria-hidden="true"></div>
+  <div class="cursor-glow" id="glow" aria-hidden="true"></div>
+
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a href="#top" class="logo">Angel Motwani</a>
+      <nav aria-label="Main">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="hero">
+      <div class="blob b1"></div>
+      <div class="blob b2"></div>
+      <div class="blob b3"></div>
+      <canvas id="net" aria-hidden="true"></canvas>
+
+      <div class="wrap hero-inner">
+        <div class="hero-text">
+          <p class="intro hero-in" style="--i:0">B.Tech Data Science at MPSTME, NMIMS Mumbai</p>
+          <h1 class="name">
+            <span class="word"><span>Angel</span></span>
+            <span class="word"><span>Motwani</span></span>
+          </h1>
+          <p class="role-line hero-in" style="--i:3">I'm a <span class="role" id="role">Data Science student</span><span class="caret" aria-hidden="true"></span></p>
+          <p class="tagline hero-in" style="--i:4">Aspiring Data Scientist who enjoys building intelligent solutions with data, AI, and technology.</p>
+          <div class="buttons hero-in" style="--i:5">
+            <a class="btn primary" href="#projects">View my work</a>
+            <a class="btn" href="#contact">Say hello</a>
+          </div>
+        </div>
+
+        <!-- Decorative data graphic (hidden on small screens) -->
+        <div class="hero-visual hero-in" style="--i:6" aria-hidden="true">
+          <div class="viz-card">
+            <div class="viz-head"><span></span><span></span><span></span><em>model_output</em></div>
+
+            <svg class="chart" viewBox="0 0 330 150" role="presentation">
+              <defs>
+                <linearGradient id="lineGrad" x1="0" x2="1" y1="0" y2="0">
+                  <stop offset="0" stop-color="#8b5cf6"/><stop offset="1" stop-color="#38bdf8"/>
+                </linearGradient>
+                <linearGradient id="areaGrad" x1="0" x2="0" y1="0" y2="1">
+                  <stop offset="0" stop-color="#8b5cf6" stop-opacity=".38"/><stop offset="1" stop-color="#8b5cf6" stop-opacity="0"/>
+                </linearGradient>
+              </defs>
+              <g stroke="rgba(167,139,250,.14)" stroke-width="1">
+                <line x1="0" y1="30" x2="330" y2="30"/><line x1="0" y1="70" x2="330" y2="70"/>
+                <line x1="0" y1="110" x2="330" y2="110"/><line x1="0" y1="148" x2="330" y2="148"/>
+              </g>
+              <path class="area" d="M0 112 C30 102 50 72 80 82 S130 122 160 87 S220 32 250 47 S300 22 320 16 L320 150 L0 150 Z" fill="url(#areaGrad)"/>
+              <path class="line" d="M0 112 C30 102 50 72 80 82 S130 122 160 87 S220 32 250 47 S300 22 320 16" fill="none" stroke="url(#lineGrad)" stroke-width="3.5" stroke-linecap="round" pathLength="1"/>
+              <circle class="dot-pulse" cx="320" cy="16" r="6" fill="#38bdf8"/>
+              <circle cx="320" cy="16" r="4.5" fill="#ffffff"/>
+            </svg>
+
+            <div class="viz-row">
+              <div class="ring-wrap">
+                <svg viewBox="0 0 80 80" class="ring" role="presentation">
+                  <circle cx="40" cy="40" r="32" fill="none" stroke="rgba(167,139,250,.18)" stroke-width="8"/>
+                  <circle class="ring-fill" cx="40" cy="40" r="32" fill="none" stroke="url(#lineGrad)" stroke-width="8" stroke-linecap="round" pathLength="100" transform="rotate(-90 40 40)"/>
+                </svg>
+                <span class="ring-num">59%</span>
+              </div>
+              <div class="ring-label">IPL winner model<br>accuracy</div>
+              <svg class="bars" viewBox="0 0 90 56" role="presentation">
+                <rect x="2"  y="30" width="12" height="26" rx="3"/>
+                <rect x="20" y="14" width="12" height="42" rx="3"/>
+                <rect x="38" y="24" width="12" height="32" rx="3"/>
+                <rect x="56" y="6"  width="12" height="50" rx="3"/>
+                <rect x="74" y="18" width="12" height="38" rx="3"/>
+              </svg>
+            </div>
+          </div>
+          <span class="float-chip c1">TensorFlow</span>
+          <span class="float-chip c2">SQL</span>
+          <span class="float-chip c3">RAG</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= NUMBERS ================= -->
+    <div class="wrap">
+      <div class="stats reveal">
+        <div class="stat"><span class="num" data-count="17">17</span><span class="label">years of IPL data modelled</span></div>
+        <div class="stat"><span class="num" data-count="100" data-prefix="~" data-suffix="K">~100K</span><span class="label">orders analysed in SQL</span></div>
+        <div class="stat"><span class="num" data-count="75" data-suffix="+">75+</span><span class="label">real-life scenarios tested</span></div>
+        <div class="stat"><span class="num" data-count="3">3</span><span class="label">hackathons entered</span></div>
+      </div>
+    </div>
+
+    <!-- ================= SKILLS TICKER (decorative) ================= -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <ul><li>Python</li><li>SQL</li><li>PostgreSQL</li><li>TensorFlow</li><li>Machine Learning</li><li>Pandas</li><li>NumPy</li><li>RAG</li><li>LangGraph</li><li>LLMs</li><li>AI Agents</li><li>Flask</li><li>Firebase</li><li>Data Visualization</li></ul>
+        <ul><li>Python</li><li>SQL</li><li>PostgreSQL</li><li>TensorFlow</li><li>Machine Learning</li><li>Pandas</li><li>NumPy</li><li>RAG</li><li>LangGraph</li><li>LLMs</li><li>AI Agents</li><li>Flask</li><li>Firebase</li><li>Data Visualization</li></ul>
+      </div>
+    </div>
+
+    <!-- ================= ABOUT ================= -->
+    <section class="section" id="about">
+      <div class="wrap about">
+        <div class="portrait-wrap reveal">
+          <div class="portrait">
+            <span class="initials" aria-hidden="true">AM</span>
+            <!-- Your photo goes in the images folder and must be named me.jpg -->
+            <img src="images/me.jpg" alt="Portrait of Angel Motwani">
+          </div>
+        </div>
+        <div>
+          <h2 class="reveal">About me</h2>
+          <p class="reveal">I'm a second-year Data Science student at MPSTME, NMIMS Mumbai. I finished school at Wynberg Allen in Mussoorie before moving to the city to study.</p>
+          <p class="reveal">I like projects where data meets a real problem: keeping patient records private on a device, finding out what actually decides a cricket match, or turning a hundred thousand orders into a story a business could act on. I learn fastest by building something, deploying it, and seeing where it breaks.</p>
+          <ul class="facts reveal">
+            <li><strong>Education:</strong> B.Tech in Data Science, NMIMS (CGPA 7.92), 2024 to 2028. Class XII (ICSE), 91.2%.</li>
+            <li><strong>Hackathons:</strong> INIT'26 (Unstop), Build and Grow AI (GDG Cloud Mumbai), ADAPPT 3.0 (IETE-SF MPSTME)</li>
+            <li><strong>Exploring:</strong> RAG, AI agents, LangGraph and LLM applications</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+    <section class="section tinted" id="projects">
+      <div class="wrap">
+        <h2 class="reveal">Projects</h2>
+
+        <div class="filters reveal" role="group" aria-label="Filter projects">
+          <button data-filter="all" aria-pressed="true">All</button>
+          <button data-filter="ml" aria-pressed="false">Machine learning</button>
+          <button data-filter="data" aria-pressed="false">Data analysis</button>
+          <button data-filter="hackathon" aria-pressed="false">Hackathon</button>
+        </div>
+
+        <div class="grid">
+
+          <article class="card reveal" data-cat="ml team">
+            <div class="card-top">
+              <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 5-3.5 8.5-7 10-3.5-1.5-7-5-7-10V6l7-3z"/><path d="M12 9v6M9 12h6"/></svg></span>
+              <p class="meta">2026 · Team of 6</p>
+            </div>
+            <h3>BACKBONE: AI-Powered Patient Health History</h3>
+            <p>A machine learning healthcare app that pulls fragmented patient records into one health history. It spots disease trends, correlations and care gaps from prescriptions, lab reports and clinical notes. It runs fully on-device and offline to protect patient privacy, and was tested across 75+ real-life scenarios.</p>
+            <ul class="tags"><li>Machine learning</li><li>AI</li><li>Privacy</li></ul>
+            <p class="links"><a href="https://github.com/motwaniangel05-sudo" target="_blank" rel="noopener">GitHub</a></p>
+          </article>
+
+          <article class="card reveal" data-cat="ml">
+            <div class="card-top">
+              <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M5.5 6.5c3 2 3 9 0 11M18.5 6.5c-3 2-3 9 0 11"/></svg></span>
+              <p class="meta">2026 · Deployed</p>
+            </div>
+            <h3>IPL Match Winner Predictor</h3>
+            <p>A TensorFlow model trained on 17 years of IPL data. I cleaned and scaled the data, ran EDA to find what drives outcomes, and reached 59% accuracy. It's deployed as a working application.</p>
+            <ul class="tags"><li>Python</li><li>TensorFlow</li><li>Pandas</li><li>NumPy</li></ul>
+            <p class="links"><a href="https://github.com/motwaniangel05-sudo" target="_blank" rel="noopener">GitHub</a></p>
+          </article>
+
+          <article class="card reveal" data-cat="data">
+            <div class="card-top">
+              <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v6c0 1.7 3.6 3 8 3s8-1.3 8-3V6M4 12v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg></span>
+              <p class="meta">2026</p>
+            </div>
+            <h3>Olist E-Commerce: SQL Analysis</h3>
+            <p>An analysis of about 100K orders across 9 relational tables using JOINs, CTEs, CASE WHEN and window functions (LAG, RANK, SUM OVER). It surfaced a 52% month-over-month revenue spike and a repeat-customer rate of about 3.1%.</p>
+            <ul class="tags"><li>SQL</li><li>PostgreSQL</li><li>Window functions</li></ul>
+            <p class="links"><a href="https://github.com/motwaniangel05-sudo" target="_blank" rel="noopener">GitHub</a></p>
+          </article>
+
+          <article class="card reveal" data-cat="ml hackathon">
+            <div class="card-top">
+              <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 8l-4 4 4 4M16 8l4 4-4 4M14 5l-4 14"/></svg></span>
+              <p class="meta">2025 · GDG Cloud Mumbai Hackathon</p>
+            </div>
+            <h3>CodeSage</h3>
+            <p>An AI code-review platform with a side-by-side view of original and corrected code, so every fix teaches something. It uses Firebase for authentication and the Gemini API for real-time feedback.</p>
+            <ul class="tags"><li>Python</li><li>Firebase</li><li>Gemini API</li></ul>
+            <p class="links"><a href="https://github.com/motwaniangel05-sudo" target="_blank" rel="noopener">GitHub</a></p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SKILLS ================= -->
+    <section class="section" id="skills">
+      <div class="wrap">
+        <h2 class="reveal">Skills &amp; interests</h2>
+        <div class="skills">
+          <div class="reveal">
+            <h3>Languages &amp; tools</h3>
+            <ul class="chips"><li>Python</li><li>SQL</li><li>PostgreSQL</li><li>Firebase</li><li>Flask</li><li>HTML</li></ul>
+          </div>
+          <div class="reveal">
+            <h3>Core strengths</h3>
+            <ul class="chips"><li>Machine learning</li><li>Data analysis</li><li>Data visualization</li><li>Software deployment</li></ul>
+          </div>
+          <div class="reveal">
+            <h3>AI concepts</h3>
+            <ul class="chips"><li>RAG</li><li>LangGraph</li><li>Prompt engineering</li><li>Generative AI</li><li>AI agents</li><li>NLP</li><li>LLMs</li><li>EDA</li></ul>
+          </div>
+          <div class="reveal">
+            <h3>Interests</h3>
+            <ul class="chips soft"><li>Healthcare AI</li><li>Cricket analytics</li><li>Hackathons</li><li>Building in public</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="section" id="contact">
+      <div class="wrap">
+        <div class="contact-panel reveal">
+          <h2>Let's talk</h2>
+          <p>Open to collaborations, hackathon teams and conversations about machine learning, data and AI.</p>
+          <div class="buttons">
+            <a class="btn primary" href="mailto:motwani.angel05@gmail.com">Email me</a>
+            <a class="btn" href="https://www.linkedin.com/in/angel-motwani-9a33b2367" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="btn" href="https://github.com/motwaniangel05-sudo" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>Designed and coded by Angel Motwani, 2026.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
