@@ -3,7 +3,7 @@
 
 **Live site:** https://motwaniangel05-sudo.github.io
 
-A personal portfolio website built with plain HTML, CSS and JavaScript for [your class / course name]. It introduces who I am, what I study, and the projects I've built as a B.Tech Data Science student at MPSTME, NMIMS Mumbai.
+A personal portfolio website built with plain HTML, CSS and JavaScript for [Btech Data Science]. It introduces who I am, what I study, and the projects I've built as a B.Tech Data Science student at MPSTME, NMIMS Mumbai.
 
 ## Sections
 - **About:** who I am, my education and what I'm exploring
